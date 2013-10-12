@@ -1,0 +1,7 @@
+Perro(Ruffo,Rolando).
+Perro(Ruffo,Rolando):-Perro(Ruffo,Rolando)(Ruffo,Rolando).
+for
+while
+write
+nl
+fail
