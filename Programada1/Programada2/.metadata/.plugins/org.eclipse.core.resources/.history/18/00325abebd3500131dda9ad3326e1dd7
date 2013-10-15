@@ -1,0 +1,34 @@
+package tp2;
+
+public class ProcesarConsultas extends ProcesarBaseConocimientos {
+
+
+public void Consulticas(String l){
+
+    while(!pilita.VaciaPila()){
+
+        String s=(String) pilita.pop().cantidad;
+        if (l.equals(s)){
+        	System.out.print("Yes");
+        	break;
+        }
+    	
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}

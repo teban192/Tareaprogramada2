@@ -1,0 +1,25 @@
+
+package tp2;
+
+import java_cup.runtime.*;
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+parser code
+{:
+
+:}
+
+action code
+{:
+:}
+
+terminal		builtfuntionw,builtfuntionnl,builtfuntionfail,abrir,regla,cerrar,hecho;
+
+non terminal	grammar;
+
+grammar			::=	regla
+				{:System.out.print("hola");
+				:}
+				
+				;

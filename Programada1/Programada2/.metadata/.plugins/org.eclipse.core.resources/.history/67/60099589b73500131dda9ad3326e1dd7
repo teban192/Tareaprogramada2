@@ -1,0 +1,56 @@
+package tp2;
+
+
+
+	import java.util.StringTokenizer;
+
+	public class ProcesarConsultas  {
+	public static  PilaArreglo pilita = new PilaArreglo();
+	static boolean verificador;
+
+
+
+
+
+	public static void procesarConsulticas(String l)
+	{StringTokenizer separador = new StringTokenizer(l, "=\n");
+	while(separador.hasMoreTokens()) {
+		String contenedor1=separador.nextToken();
+		StringTokenizer separinfcl = new StringTokenizer(contenedor1,"=;");
+		while(separinfcl.hasMoreTokens()) {
+	    String contenedor2=separinfcl.nextToken();
+	    String contenedor3=separinfcl.nextToken();
+	    int contenedortransformado=Integer.parseInt(contenedor2);
+	    
+	    if (Arbol.isEmpty()){
+	    	arbolubicaciones.insertarNodo(contenedortransformado,contenedor3);
+	    	break;}
+	    else
+	   
+	   verificador=Arbol.find(contenedortransformado,Arbol.raiz);
+	   if (verificador==false){
+		   arbolubicaciones.insertarNodo(contenedortransformado,contenedor3);
+	  } 
+	  verificador=false;
+	}
+		 	
+	}// fin del segundo whil 
+
+	}
+
+	 
+	}// fin de la
+
+
+
+
+
+
+
+
+
+
+
+
+
+

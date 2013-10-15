@@ -1,0 +1,23 @@
+
+package tp2;
+
+import java_cup.runtime.*;
+
+parser code
+{:
+
+:}
+
+action code
+{:
+:}
+
+terminal		builtfuntionw,builtfuntionnl,builtfuntionfail,abrir,regla,cerrar,hecho;
+
+non terminal	grammar;
+
+grammar			::=	ANY
+				{:
+				:}
+				
+				;

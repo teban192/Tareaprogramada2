@@ -1,0 +1,11 @@
+Perro(Ruffo,Rolando).
+Perro(Ruffo,Rolando):-Perro(Ruffo,Rolando),Perro(Ruffo,Rolando).
+write(peleon).
+nl
+fail
+oso(yogi).
+Perro(pluto).
+amarte(la):-tea(as).
+laboda(pedro).
+if
+colorearlaasfkanldfnalksndfjkansjd

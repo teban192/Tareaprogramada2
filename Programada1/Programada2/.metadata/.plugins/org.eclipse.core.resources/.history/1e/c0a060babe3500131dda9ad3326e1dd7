@@ -1,0 +1,39 @@
+package tp2;
+
+public class ProcesarConsultas extends ProcesarBaseConocimientos {
+
+
+public void Consulticas(String l){
+    NodoLista a=pilita.PrimerNodo;
+    pilita.Imprime_pila();
+    while(a!=null){
+
+        
+        String m=a.cantidad.toString();
+        System.out.print(m);
+        System.out.print("\n");
+        if (l.equals(m)){
+        	System.out.print("No");
+        	break;
+        }
+        else
+        	a=a.siguiente;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}

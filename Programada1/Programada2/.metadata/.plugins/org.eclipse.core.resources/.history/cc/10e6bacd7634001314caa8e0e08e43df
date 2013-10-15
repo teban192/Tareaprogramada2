@@ -1,0 +1,51 @@
+
+package tp2;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+%%
+%class Sca 
+%unicode
+%standalone
+%type String 
+
+%init{
+      this.tokensList = new ArrayList();   
+%init}
+
+
+%{
+
+private ArrayList tokensList; 
+
+private void writeOutputFile() throws IOException {/* metodo usado para guardar los tokens correctos*/
+	String filename = "salida.out";
+	BufferedWriter out = new BufferedWriter(new FileWriter(filename));
+	for (Object s:this.tokensList) {
+		out.write(s + "\n");
+	}
+	out.close();
+}
+
+%}
+/*Aca definimos las macros que corresponderan a los tokens validos identificados*/ 
+
+Identifier= [a-zA-Z][a-zA-Z0-9_"",()]* /* Macro para definiciones */
+
+
+%%
+{Identifier}+"("{Identifier}*+")"+"."    {this.tokensList.add(yytext());}
+{Identifier}+{Identifier}*":""-"{Identifier}+{Identifier}*","*"."   {this.tokensList.add(yytext());}
+"write"{Identifier}+ {System.out.printf(yytext(),"yes");
+    }
+"nl" {System.out.print("\n");}
+"fail" {this.tokensList.add(yytext());}
+/* validando tokens*/
+/*con esta ignoramos los saltos de linea, tabulaciones,*/
+[\t\r\n\f] {}
+          
+<<EOF>>       {this.writeOutputFile(); System.exit(0);}  
+
+      

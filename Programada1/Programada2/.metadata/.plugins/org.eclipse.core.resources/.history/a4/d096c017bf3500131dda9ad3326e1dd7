@@ -1,0 +1,27 @@
+package tp2;
+
+public class ProcesarConsultas extends ProcesarBaseConocimientos {
+
+
+public void Consulticas(String l){
+    
+    if (pilita.VaciaPila())
+    
+    {System.out.println("hola");}
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}

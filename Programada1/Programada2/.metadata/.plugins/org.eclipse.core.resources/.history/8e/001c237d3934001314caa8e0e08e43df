@@ -1,0 +1,10 @@
+Perro(Ruffo,Rolando).
+Perro(Ruffo,Rolando):-Perro(Ruffo,Rolando),Perro(Ruffo,Rolando).
+for
+while
+write
+nl
+fail
+oso(yogi).
+Perro(pluto).
+amarte(la):-tea(as).

@@ -1,0 +1,55 @@
+package tp2;
+
+
+
+	import java.util.StringTokenizer;
+
+	public class ProcesarBaseConocimientos  {
+	public static  PilaArreglo pilita = new PilaArreglo();
+	static boolean verificador;
+
+
+
+
+
+	public static void procesarConsulticas(String l,String m)
+	{StringTokenizer separador = new StringTokenizer(l, "=\n");
+	while(separador.hasMoreTokens()) {
+		String contenedor1=separador.nextToken();
+        pilita.Push(contenedor1);
+        
+
+	 
+	}// fin de la
+
+   procesarconsultas(m);
+	
+	
+	}
+	
+public static void procesarconsultas(String a)	 {
+	
+       System.out.print("m");
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+Perro(Ruffo,Rolando).
+Perro(Ruffo,Rolando):-Perro(Ruffo,Rolando),Perro(Ruffo,Rolando).
+fail
+oso(yogi).
+Perro(pluto).
+amarte(la):-tea(as).
+laboda(pedro).

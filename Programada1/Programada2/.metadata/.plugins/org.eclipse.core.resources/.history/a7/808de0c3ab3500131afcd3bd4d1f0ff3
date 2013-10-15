@@ -1,0 +1,38 @@
+package tp2;
+
+
+
+;
+
+
+import java.io.*;
+import javax.swing.JOptionPane;
+public class Leerarchivos {
+	
+	
+	public String leer(String nombre) {
+		try{ 
+	
+			File f;
+			FileReader lectorArchivo;
+			f = new File(nombre); 
+			lectorArchivo = new FileReader(f); 
+			BufferedReader br = new BufferedReader(lectorArchivo); 
+			String l=""; 
+			String aux="";/*variable auxiliar*/ 
+			while(true) 
+			{  aux=br.readLine();
+			if(aux!=null){
+				l=l+aux+"\n";}
+		    else 
+				break;}
+			br.close();
+			lectorArchivo.close(); 
+			return l; 
+		}catch(IOException e){ JOptionPane.showMessageDialog(null,"Error:"+e.getMessage()); } 
+
+
+		return null; 
+	}// fin meted leer
+		
+	

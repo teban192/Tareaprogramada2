@@ -1,0 +1,21 @@
+package tp2;
+
+public class ProcesarConsultas extends ProcesarBaseConocimientos {
+
+
+	public static void procesarconsultas(String a)	 {
+		  
+	      NodoLista q=pilita.PrimerNodo;
+	      while (q!=null){
+	      
+	    	  System.out.print(q.codproducto);
+	          q=q.siguiente;
+
+
+	      }
+
+
+
+
+
+}
